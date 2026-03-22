@@ -16,14 +16,14 @@ const certifications = [
     link: "/NPTEL.png",
   },
   {
-    title: "Mastering Generative AI",
-    issuer: "Infosys Springboard",
+    title: "GenAI Fundamentals",
+    issuer: "Disha",
     date: "2025",
     description:
-      "Explored practical GenAI concepts, prompting strategies, and real-world use cases for modern software workflows.",
-    skills: ["GenAI", "Prompting", "AI Tools"],
-    image: "/Mastering%20Generative%20AI.png",
-    link: "/Mastering%20Generative%20AI.png",
+      "Built foundational understanding of generative AI concepts, terminology, and application-driven learning.",
+    skills: ["AI Basics", "GenAI", "Fundamentals"],
+    image: "/GenAI%20Fundamentals.png",
+    link: "/GenAI%20Fundamentals.png",
   },
   {
     title: "Data Structures and Algorithms",
@@ -36,14 +36,14 @@ const certifications = [
     link: "/DSA.png",
   },
   {
-    title: "GenAI Fundamentals",
-    issuer: "Disha",
+    title: "Mastering Generative AI",
+    issuer: "Infosys Springboard",
     date: "2025",
     description:
-      "Built foundational understanding of generative AI concepts, terminology, and application-driven learning.",
-    skills: ["AI Basics", "GenAI", "Fundamentals"],
-    image: "/GenAI%20Fundamentals.png",
-    link: "/GenAI%20Fundamentals.png",
+      "Explored practical GenAI concepts, prompting strategies, and real-world use cases for modern software workflows.",
+    skills: ["GenAI", "Prompting", "AI Tools"],
+    image: "/Mastering%20Generative%20AI.png",
+    link: "/Mastering%20Generative%20AI.png",
   },
   {
     title: "What is Data Science",
