@@ -1,0 +1,12 @@
+<svg width="800" height="520" viewBox="0 0 800 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="520" rx="36" fill="#FEF3C7"/>
+  <rect x="32" y="32" width="736" height="456" rx="28" fill="#FFFDF5"/>
+  <rect x="64" y="64" width="672" height="72" rx="20" fill="#78350F"/>
+  <text x="96" y="110" fill="#FFFBEB" font-family="Arial, sans-serif" font-size="28" font-weight="700">SkillStone</text>
+  <rect x="64" y="164" width="672" height="220" rx="24" fill="#FFFBEB" stroke="#FBBF24" stroke-width="4"/>
+  <text x="96" y="232" fill="#78350F" font-family="Arial, sans-serif" font-size="22" font-weight="700">Data Structures and Algorithms</text>
+  <text x="96" y="274" fill="#92400E" font-family="Arial, sans-serif" font-size="16">Technical Certification</text>
+  <text x="96" y="320" fill="#B45309" font-family="Arial, sans-serif" font-size="16">Problem solving, logic, and optimization patterns</text>
+  <rect x="64" y="414" width="240" height="32" rx="16" fill="#FDE68A"/>
+  <text x="92" y="435" fill="#78350F" font-family="Arial, sans-serif" font-size="14" font-weight="700">Issued 2024</text>
+</svg>
