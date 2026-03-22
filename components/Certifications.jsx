@@ -26,16 +26,6 @@ const certifications = [
     link: "/Mastering%20Generative%20AI.png",
   },
   {
-    title: "GenAI Fundamentals",
-    issuer: "Disha",
-    date: "2025",
-    description:
-      "Built foundational understanding of generative AI concepts, terminology, and application-driven learning.",
-    skills: ["AI Basics", "GenAI", "Fundamentals"],
-    image: "/GenAI%20Fundamentals.png",
-    link: "/GenAI%20Fundamentals.png",
-  },
-  {
     title: "Data Structures and Algorithms",
     issuer: "SkillStone",
     date: "2025",
@@ -46,14 +36,14 @@ const certifications = [
     link: "/DSA.png",
   },
   {
-    title: "Responsive Web Design",
-    issuer: "freeCodeCamp",
-    date: "2023",
+    title: "GenAI Fundamentals",
+    issuer: "Disha",
+    date: "2025",
     description:
-      "Focused on HTML, CSS, layout systems, and mobile-first approaches for building responsive user interfaces.",
-    skills: ["HTML", "CSS", "Responsive UI"],
-    image: "/Responsive%20web%20design.png",
-    link: "/Responsive%20web%20design.png",
+      "Built foundational understanding of generative AI concepts, terminology, and application-driven learning.",
+    skills: ["AI Basics", "GenAI", "Fundamentals"],
+    image: "/GenAI%20Fundamentals.png",
+    link: "/GenAI%20Fundamentals.png",
   },
   {
     title: "What is Data Science",
@@ -64,6 +54,16 @@ const certifications = [
     skills: ["Data Science", "Analytics", "Fundamentals"],
     image: "/Data%20Science.png",
     link: "/Data%20Science.png",
+  },
+  {
+    title: "Responsive Web Design",
+    issuer: "freeCodeCamp",
+    date: "2023",
+    description:
+      "Focused on HTML, CSS, layout systems, and mobile-first approaches for building responsive user interfaces.",
+    skills: ["HTML", "CSS", "Responsive UI"],
+    image: "/Responsive%20web%20design.png",
+    link: "/Responsive%20web%20design.png",
   },
 ];
 
