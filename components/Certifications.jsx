@@ -28,7 +28,7 @@ const certifications = [
   {
     title: "GenAI Fundamentals",
     issuer: "Disha",
-    date: "2024",
+    date: "2025",
     description:
       "Built foundational understanding of generative AI concepts, terminology, and application-driven learning.",
     skills: ["AI Basics", "GenAI", "Fundamentals"],
@@ -38,7 +38,7 @@ const certifications = [
   {
     title: "Data Structures and Algorithms",
     issuer: "SkillStone",
-    date: "2024",
+    date: "2025",
     description:
       "Strengthened problem-solving through common data structures, algorithmic approaches, and optimization patterns.",
     skills: ["DSA", "Logic", "Optimization"],
@@ -48,7 +48,7 @@ const certifications = [
   {
     title: "Responsive Web Design",
     issuer: "freeCodeCamp",
-    date: "2024",
+    date: "2023",
     description:
       "Focused on HTML, CSS, layout systems, and mobile-first approaches for building responsive user interfaces.",
     skills: ["HTML", "CSS", "Responsive UI"],
