@@ -18,9 +18,17 @@ export default function CertificateCard({
   const [isPinned, setIsPinned] = useState(false);
   const prefersReducedMotion = useReducedMotion();
   const isFlipped = isHovered || isPinned;
+  const faceStyle = {
+    backfaceVisibility: "hidden",
+    WebkitBackfaceVisibility: "hidden",
+  };
 
   return (
-    <div className="h-[25.5rem] [perspective:1600px]">
+    <div
+      className="h-[25.5rem] [perspective:1600px]"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       <motion.div
         className="relative h-full w-full origin-center [transform-style:preserve-3d]"
         animate={{ rotateY: isFlipped ? 180 : 0 }}
@@ -28,17 +36,26 @@ export default function CertificateCard({
           duration: prefersReducedMotion ? 0 : 0.9,
           ease: [0.19, 1, 0.22, 1],
         }}
-        onHoverStart={() => setIsHovered(true)}
-        onHoverEnd={() => setIsHovered(false)}
       >
         <motion.button
           type="button"
           onClick={() => setIsPinned((prev) => !prev)}
-          className="absolute inset-0 w-full rounded-[1.9rem] text-left [backface-visibility:hidden]"
+          className="absolute inset-0 w-full rounded-[1.9rem] text-left [transform:rotateY(0deg)]"
+          style={faceStyle}
           whileHover={prefersReducedMotion ? undefined : { y: -4 }}
           whileTap={{ scale: 0.985 }}
         >
-          <div className="glass-card interactive-surface relative h-full rounded-[1.9rem] p-5 shadow-[0_24px_80px_rgba(244,114,182,0.08)]">
+          <motion.div
+            animate={{
+              opacity: isFlipped ? 0 : 1,
+              y: isFlipped ? -4 : 0,
+            }}
+            transition={{
+              duration: prefersReducedMotion ? 0 : 0.18,
+              ease: "easeOut",
+            }}
+            className="glass-card interactive-surface relative h-full rounded-[1.9rem] p-5 shadow-[0_24px_80px_rgba(244,114,182,0.08)]"
+          >
             <div className="absolute inset-0 bg-gradient-to-br from-rose-500/10 via-transparent to-sky-400/10" />
             <div
               className="absolute inset-x-0 bottom-0 h-[36%] bg-white/5"
@@ -79,14 +96,26 @@ export default function CertificateCard({
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
         </motion.button>
 
         <motion.div
-          className="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)]"
+          className="absolute inset-0 [transform:rotateY(180deg)]"
+          style={faceStyle}
           whileHover={prefersReducedMotion ? undefined : { y: -4 }}
         >
-          <div className="glass-card interactive-surface relative flex h-full flex-col rounded-[1.9rem] p-6 shadow-[0_24px_80px_rgba(244,114,182,0.1)]">
+          <motion.div
+            animate={{
+              opacity: isFlipped ? 1 : 0,
+              y: isFlipped ? 0 : 10,
+            }}
+            transition={{
+              duration: prefersReducedMotion ? 0 : 0.28,
+              delay: prefersReducedMotion ? 0 : isFlipped ? 0.2 : 0,
+              ease: "easeOut",
+            }}
+            className="glass-card interactive-surface relative flex h-full flex-col rounded-[1.9rem] p-6 shadow-[0_24px_80px_rgba(244,114,182,0.1)]"
+          >
             <div className="absolute inset-0 bg-gradient-to-br from-rose-500/12 via-transparent to-fuchsia-400/12" />
 
             <div className="relative z-10 flex h-full flex-col">
@@ -138,7 +167,7 @@ export default function CertificateCard({
                 Hover out to close
               </p>
             </div>
-          </div>
+          </motion.div>
         </motion.div>
       </motion.div>
     </div>
