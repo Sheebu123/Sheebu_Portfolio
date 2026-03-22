@@ -79,7 +79,7 @@ export default function Home() {
               Snapshot
             </p>
             <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-              A portfolio focused on clear work and practical skills.
+              Work shaped by practical skills and real development experience.
             </h2>
             <p className="mt-5 max-w-2xl text-base leading-8 text-slate-300">
               I build web applications with clean UI, reliable backend logic,
@@ -119,7 +119,7 @@ export default function Home() {
           <p className="text-sm font-semibold uppercase tracking-[0.32em] text-primary">
             Explore
           </p>
-          <h2 className="section-title mt-4">Browse the portfolio by page.</h2>
+          <h2 className="section-title mt-4">Explore each section in its own page.</h2>
           <p className="section-copy">
             Each section has its own page for a cleaner and easier experience.
           </p>

@@ -97,6 +97,7 @@ export default function Hero() {
             className="mt-10 flex flex-wrap gap-4"
           >
             {links.map((link) => {
+              const isResume = link.label === "Download Resume";
               const baseClasses =
                 "inline-flex items-center justify-center rounded-full px-5 py-3 text-sm font-medium transition";
               const variantClasses =
@@ -112,11 +113,12 @@ export default function Hero() {
                   whileTap={{ scale: 0.98 }}
                   key={link.label}
                 >
-                  {link.href.startsWith("http") || link.label === "Download Resume" ? (
+                  {link.href.startsWith("http") || isResume ? (
                     <a
                       href={link.href}
-                      target="_blank"
-                      rel="noreferrer"
+                      download={isResume ? "SHEEBU_CV.pdf" : undefined}
+                      target={link.href.startsWith("http") ? "_blank" : undefined}
+                      rel={link.href.startsWith("http") ? "noreferrer" : undefined}
                       className={`${baseClasses} ${variantClasses}`}
                     >
                       {link.label}
