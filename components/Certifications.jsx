@@ -8,7 +8,7 @@ const certifications = [
   {
     title: "Cloud Computing",
     issuer: "NPTEL",
-    date: "2024",
+    date: "2025",
     description:
       "A cloud-focused certification covering architecture, infrastructure concepts, and distributed computing fundamentals.",
     skills: ["Cloud", "Architecture", "Infrastructure"],
@@ -18,7 +18,7 @@ const certifications = [
   {
     title: "Mastering Generative AI",
     issuer: "Infosys Springboard",
-    date: "2024",
+    date: "2025",
     description:
       "Explored practical GenAI concepts, prompting strategies, and real-world use cases for modern software workflows.",
     skills: ["GenAI", "Prompting", "AI Tools"],
